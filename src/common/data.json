@@ -1,0 +1,67 @@
+{
+  "data": [
+
+    {
+      "name": "Fruits",
+      "isBegin": true,
+      "depth": 0,
+      "children": [
+        {
+          "name": "Red",
+          "depth": 1,
+          "children": [
+            {
+              "name": "Apple",
+              "depth": 2
+            },
+            {
+              "name": "Peach",
+              "depth": 2
+
+
+            },
+            {
+              "name": "Pomergarnet",
+              "depth": 2
+
+            }
+          ]
+        },
+        {
+          "name": "Yellow",
+          "depth": 1,
+          "children": [
+            {
+              "name": "Banana",
+              "depth": 2
+
+            },
+            {
+              "name":"Pineapple",
+              "depth": 2
+
+            }
+          ]
+
+        }
+      ]
+    },
+    {
+      "name": "Berries",
+      "isBegin": true,
+      "depth": 0,
+      "children": [
+        {
+          "name": "Strawberry",
+          "depth": 1
+
+        },
+        {
+          "name": "Blackberry",
+          "depth": 1
+
+        }
+      ]
+    }
+  ]
+}
