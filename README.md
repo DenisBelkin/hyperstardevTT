@@ -1,68 +1,45 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# react-test-project
 
-## Available Scripts
+## Task:
+1. Create a reactjs application which is capable to render nested json data struture of the following format:
+```js
+{
+  "data": [
+    {
+      "name": "String",
+      "children": [
+        {
+          "name": "String",
+          "children": [
+            // ...
+          ]
+        }, {
+          "name": "String",
+          "children": [
+            // ...
+          ]
+        },
+        // ...
+      ]
+    }, {
+      "name": "String",
+      "children": [
+        // ...
+      ]
+    },
+    // ...
+  ]
+}
+```
+This component should show each node's name and indicate relation to it's children nodes. Example:
+![Component example](http://static.webdeveloperplus.com/uploads/2009/07/css-amazing-techniques/tree-like-navigation.png)
 
-In the project directory, you can run:
+2. Make each node open/close by click on it's name.
 
-### `npm start`
+3. Make collapsible component logic reusable by using higher order component pattern.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4. Using react context make it so when you click on any leaf node it will close all nodes in the tree.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+5. Make a generator of the mock data(nested json data structures) to test your component. Names for each node can be non-uniq.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+6. Connect [this countries graphql API](https://countries.trevorblades.com) to your components to display nesting of `Continent`, `Country` and `Language` types
